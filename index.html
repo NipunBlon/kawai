@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anita Magar — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ── SIDEBAR NAV ── -->
+  <nav class="sidebar">
+    <div class="sidebar-logo">AM</div>
+    <ul class="sidebar-links">
+      <li><a href="#home"    data-label="⌂ home">⌂</a></li>
+      <li><a href="#about"   data-label="◉ about">◉</a></li>
+      <li><a href="#skills"  data-label="⚡ skills">⚡</a></li>
+      <li><a href="#hobbies" data-label="♡ hobbies">♡</a></li>
+      <li><a href="#music"   data-label="♪ music">♪</a></li>
+      <li><a href="#contact" data-label="✉ contact">✉</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+      <span class="toggle-icon">🌙</span>
+    </button>
+  </nav>
+
+  <!-- ── MAIN ── -->
+  <main class="main-content">
+
+    <!-- ══ HERO ══ -->
+    <section id="home" class="section hero-section">
+      <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="term-path">root@anita ~ $whoami</span>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">// Hello World 🌸</p>
+          <h1 class="hero-name">Hi, I'm <em>Anita Magar</em></h1>
+          <p class="hero-tagline typewriter" id="typewriter"></p>
+          <p class="hero-sub">
+            Grade 11 student from Nepal 🇳🇵 — curious about everything, from code to chords.
+            I love anime, movies, music, and slowly figuring out this wild thing called life.
+          </p>
+          <div class="hero-ctas">
+            <a href="#about" class="btn btn-primary">About Me ↓</a>
+            <a href="#contact" class="btn btn-ghost">Say Hello ♡</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Languages</span></div>
+            <div class="stat"><span class="stat-num" data-target="11">0</span><span class="stat-label">Grade</span></div>
+            <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Yrs Coding</span></div>
+            <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">Anime Eps+</span></div>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="photo-ring"></div>
+          <div class="photo-ring ring-2"></div>
+          <img src="icon.png" alt="Anita Magar" class="hero-photo" />
+          <div class="photo-badge">🌸 Nepal</div>
+        </div>
+      </div>
+      <div class="scroll-hint">scroll ↓</div>
+    </section>
+
+    <!-- ══ ABOUT ══ -->
+    <section id="about" class="section about-section">
+      <div class="section-header">
+        <span class="term-cmd">~$cat about.md</span>
+        <h2 class="section-title">About <em>Me</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="about-photo-frame">
+            <img src="icon.png" alt="Anita Magar" />
+            <div class="photo-deco sakura">🌸</div>
+            <div class="photo-deco star">✦</div>
+          </div>
+          <div class="about-badges">
+            <span class="badge">Grade 11</span>
+            <span class="badge">Science</span>
+            <span class="badge">Nepal 🇳🇵</span>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <h3 class="about-heading">Who I <em>Am</em></h3>
+          <p>
+            Hey! I'm <strong>Anita</strong> — a Grade 11 student at <strong>MOLISS College</strong>, 
+            navigating science, code, and an ever-growing watchlist all at once. I completed my SEE 
+            (Grade 10) in <strong>2081 BS</strong> from <strong>Anant English School, Lalitpur</strong>.
+          </p>
+          <p>
+            I got into coding through school — starting with QBasic and slowly making my way 
+            to HTML, Python, and beyond. I'm a beginner who's genuinely curious, and I've even 
+            dabbled with Linux (it broke my system once, but we don't talk about that 😅).
+          </p>
+          <p>
+            When I'm not studying or staring at a terminal, you'll find me deep in an anime arc, 
+            halfway through a K-drama, learning a new chord on the guitar, or building a playlist 
+            that perfectly captures a mood I can't name.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item"><span class="meta-icon">🎓</span><div><strong>School</strong><br/>Anant English School, Lalitpur</div></div>
+            <div class="meta-item"><span class="meta-icon">🏫</span><div><strong>College</strong><br/>MOLISS College</div></div>
+            <div class="meta-item"><span class="meta-icon">📍</span><div><strong>Location</strong><br/>Nepal 🇳🇵</div></div>
+            <div class="meta-item"><span class="meta-icon">✉️</span><div><strong>Email</strong><br/>anitamagar@email.com</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SKILLS ══ -->
+    <section id="skills" class="section skills-section">
+      <div class="section-header">
+        <span class="term-cmd">~$ls skills/</span>
+        <h2 class="section-title">My <em>Toolkit</em></h2>
+      </div>
+      <p class="section-sub">Things I've picked up along the way — still learning, always curious.</p>
+
+      <div class="skills-journey">
+
+        <div class="journey-card">
+          <div class="journey-year">2022 – 2023</div>
+          <div class="journey-body">
+            <h3>First Spark 🌱</h3>
+            <p class="journey-place">School Computer Lab · Anant English School</p>
+            <p>My first real encounter with programming was through school classes. QBasic programs, simple loops, and "why isn't this working?!" moments. It was the spark that made me genuinely interested in how computers think.</p>
+            <div class="tags">
+              <span class="tag">QBasic</span>
+              <span class="tag">Basic Programming</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-card">
+          <div class="journey-year">2023 – 2024</div>
+          <div class="journey-body">
+            <h3>Going Deeper 💻</h3>
+            <p class="journey-place">Self-Learning · YouTube &amp; Docs</p>
+            <p>Started exploring beyond school — HTML and CSS to make things look pretty, a bit of JavaScript for interactivity, and Python because everyone said it was beginner-friendly (they were right). Also tried C and C++ for the challenge. And yes, I tried Linux. Arch, briefly. RIP that install.</p>
+            <div class="tags">
+              <span class="tag">HTML & CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">C / C++</span>
+              <span class="tag">Linux (Beginner)</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-card active-card">
+          <div class="journey-year">2024 – Now</div>
+          <div class="journey-body">
+            <h3>Grade 11 & Beyond ✨</h3>
+            <p class="journey-place">MOLISS College · Science</p>
+            <p>Currently studying in Grade 11, balancing academics with personal projects and curiosity-driven learning. Coding is no longer just a subject — it's a hobby I genuinely enjoy alongside music, movies, and everything else I love.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">C / C++</span>
+              <span class="tag">Web Dev</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Linux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-pill"><span class="skill-icon">🖥️</span> QBasic <span class="level">School</span></div>
+        <div class="skill-pill"><span class="skill-icon">🌐</span> HTML & CSS <span class="level">Beginner+</span></div>
+        <div class="skill-pill"><span class="skill-icon">⚙️</span> JavaScript <span class="level">Beginner</span></div>
+        <div class="skill-pill"><span class="skill-icon">🐍</span> Python <span class="level">Beginner</span></div>
+        <div class="skill-pill"><span class="skill-icon">⚡</span> C / C++ <span class="level">Beginner</span></div>
+        <div class="skill-pill"><span class="skill-icon">🔢</span> Algorithms <span class="level">Learning</span></div>
+        <div class="skill-pill"><span class="skill-icon">🐧</span> Linux <span class="level">Tried it</span></div>
+        <div class="skill-pill"><span class="skill-icon">🎸</span> Guitar <span class="level">Beginner</span></div>
+        <div class="skill-pill"><span class="skill-icon">🎹</span> Piano <span class="level">Beginner</span></div>
+      </div>
+    </section>
+
+    <!-- ══ HOBBIES ══ -->
+    <section id="hobbies" class="section hobbies-section">
+      <div class="section-header">
+        <span class="term-cmd">~$cat hobbies.json</span>
+        <h2 class="section-title">Things I <em>Love</em></h2>
+      </div>
+
+      <div class="hobbies-grid">
+
+        <div class="hobby-card big-card">
+          <div class="hobby-emoji">🎌</div>
+          <h3>Anime &amp; K-Dramas</h3>
+          <p>My comfort zone and my source of tears. I have a soft spot for emotional storylines, beautifully drawn worlds, and characters that feel more real than some people I know. My watchlist? Infinite.</p>
+          <div class="hobby-tags">
+            <span>Anime</span><span>K-Drama</span><span>Manga</span><span>Slice of Life</span>
+          </div>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-emoji">🎬</div>
+          <h3>Movies</h3>
+          <p>Wide taste — from Nepali films to Hollywood blockbusters, Russian arthouse to Japanese animation. If it has a good story, I'm watching.</p>
+          <div class="hobby-tags">
+            <span>Nepali</span><span>Hindi</span><span>American</span><span>British</span><span>Russian</span><span>Korean</span><span>Japanese</span>
+          </div>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-emoji">🎵</div>
+          <h3>Music</h3>
+          <p>R&amp;B, alternative, soul, pop — I live in playlists. Currently taking guitar and piano classes. A beginner, but determined.</p>
+          <div class="hobby-tags">
+            <span>R&B</span><span>Alternative</span><span>Guitar 🎸</span><span>Piano 🎹</span>
+          </div>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-emoji">💻</div>
+          <h3>Coding (for fun)</h3>
+          <p>Not just for school — I genuinely enjoy making little things with code. Building something that works is its own kind of satisfying.</p>
+          <div class="hobby-tags">
+            <span>Python</span><span>Web</span><span>Linux</span>
+          </div>
+        </div>
+
+        <div class="hobby-card">
+          <div class="hobby-emoji">📚</div>
+          <h3>Learning &amp; Exploring</h3>
+          <p>Whether it's a new language, a new instrument, or a rabbit hole on Wikipedia at 2am — I'm always curious about something new.</p>
+          <div class="hobby-tags">
+            <span>Reading</span><span>Curiosity</span><span>Self-learning</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ MUSIC ══ -->
+    <section id="music" class="section music-section">
+      <div class="section-header">
+        <span class="term-cmd">~$play favorites.m3u</span>
+        <h2 class="section-title">Favourite <em>Artists</em></h2>
+      </div>
+      <p class="section-sub">The artists that live permanently in my ears. ♪</p>
+
+      <div class="artists-grid">
+
+        <div class="artist-card">
+          <div class="artist-art" style="background: linear-gradient(135deg,#1a1a2e,#16213e)">
+            <span class="artist-initial">DC</span>
+          </div>
+          <div class="artist-info">
+            <h3>Daniel Caesar</h3>
+            <p class="artist-genre">R&B / Soul</p>
+            <p class="artist-bio">Toronto-based R&amp;B singer known for his soulful, gospel-tinged sound and deeply emotional lyrics. His voice feels like a warm hug.</p>
+            <div class="songs">
+              <span class="song">♪ Best Part</span>
+              <span class="song">♪ Get You</span>
+              <span class="song">♪ Blessed</span>
+              <span class="song">♪ Japanese Denim</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="artist-card">
+          <div class="artist-art" style="background: linear-gradient(135deg,#2c1810,#5c3317)">
+            <span class="artist-initial">FO</span>
+          </div>
+          <div class="artist-info">
+            <h3>Frank Ocean</h3>
+            <p class="artist-genre">R&B / Alternative</p>
+            <p class="artist-bio">A generation-defining artist. His albums <em>Channel Orange</em> and <em>Blonde</em> are masterpieces that feel entirely personal no matter who's listening.</p>
+            <div class="songs">
+              <span class="song">♪ Thinkin Bout You</span>
+              <span class="song">♪ Pink + White</span>
+              <span class="song">♪ Nights</span>
+              <span class="song">♪ Ivy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="artist-card">
+          <div class="artist-art" style="background: linear-gradient(135deg,#3d0a30,#7b1a5a)">
+            <span class="artist-initial">SZA</span>
+          </div>
+          <div class="artist-info">
+            <h3>SZA</h3>
+            <p class="artist-genre">R&B / Neo Soul</p>
+            <p class="artist-bio">SZA's music captures every complicated feeling about love, growth, and self. Her album <em>SOS</em> had me going through every emotion in 23 tracks.</p>
+            <div class="songs">
+              <span class="song">♪ Kill Bill</span>
+              <span class="song">♪ Good Days</span>
+              <span class="song">♪ Snooze</span>
+              <span class="song">♪ Nobody Gets Me</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="artist-card">
+          <div class="artist-art" style="background: linear-gradient(135deg,#0d0d0d,#333)">
+            <span class="artist-initial">DK</span>
+          </div>
+          <div class="artist-info">
+            <h3>Drake</h3>
+            <p class="artist-genre">Hip-Hop / R&B</p>
+            <p class="artist-bio">From rap anthems to soft R&amp;B, Drake's versatility is unmatched. Whether it's hype or heartbreak, he's got a song for the mood.</p>
+            <div class="songs">
+              <span class="song">♪ Passionfruit</span>
+              <span class="song">♪ Controlla</span>
+              <span class="song">♪ One Dance</span>
+              <span class="song">♪ Hotline Bling</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="artist-card">
+          <div class="artist-art" style="background: linear-gradient(135deg,#4a0a0a,#9b2335)">
+            <span class="artist-initial">TS</span>
+          </div>
+          <div class="artist-info">
+            <h3>Taylor Swift</h3>
+            <p class="artist-genre">Pop / Folk / Country</p>
+            <p class="artist-bio">An era for every feeling. Taylor's storytelling is unparalleled — she writes songs that feel like they were written specifically about your life, which is both magical and suspicious.</p>
+            <div class="songs">
+              <span class="song">♪ cardigan</span>
+              <span class="song">♪ Cruel Summer</span>
+              <span class="song">♪ Anti-Hero</span>
+              <span class="song">♪ All Too Well</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ CONTACT ══ -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header">
+        <span class="term-cmd">~$./say_hello.sh</span>
+        <h2 class="section-title">Let's <em>Connect</em></h2>
+      </div>
+      <p class="section-sub">Whether it's about code, anime recommendations, or just a friendly hello — I'd love to hear from you! 🌸</p>
+
+      <div class="contact-inner">
+        <div class="contact-cards">
+          <a href="mailto:anitamagar@email.com" class="contact-card">
+            <span class="cc-icon">📧</span>
+            <div><strong>Email</strong><br/>anitamagar@email.com</div>
+          </a>
+          <a href="https://github.com/" target="_blank" class="contact-card">
+            <span class="cc-icon"><i class="fab fa-github"></i></span>
+            <div><strong>GitHub</strong><br/>github.com/anitamagar</div>
+          </a>
+          <a href="https://instagram.com/" target="_blank" class="contact-card">
+            <span class="cc-icon"><i class="fab fa-instagram"></i></span>
+            <div><strong>Instagram</strong><br/>@anitamagar</div>
+          </a>
+          <div class="contact-card no-link">
+            <span class="cc-icon">📍</span>
+            <div><strong>Location</strong><br/>Nepal 🇳🇵</div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="What's it about?" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Say hi! ♡" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message 🌸</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>Made with 🌸 by <strong>Anita Magar</strong> · Nepal</p>
+    <p class="footer-sub">© 2025 — Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
